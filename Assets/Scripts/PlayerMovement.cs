@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _playerRigidBody;
     [SerializeField] private float _speed = 5f;
     private Animator _animator;
-    [SerializeField] private float _jumpSpeed = 5f;
+    [SerializeField] private float _jumpSpeed = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.Space))
         {
             _animator.SetBool("isSpaceBarActive", false);
+
         }
-         
     }
 
 
