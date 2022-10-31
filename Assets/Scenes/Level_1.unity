@@ -54141,6 +54141,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1135508342936863119, guid: 7a5907dad8ca60c4a86447221b60f061, type: 3}
+      propertyPath: _jumpSpeed
+      value: 10.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7173382513284471096, guid: 7a5907dad8ca60c4a86447221b60f061, type: 3}
       propertyPath: m_Name
       value: Player_Knight
