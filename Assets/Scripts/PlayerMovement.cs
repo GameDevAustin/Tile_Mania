@@ -8,9 +8,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D _playerRigidBody;
     [SerializeField] private float _speed = 5f;
     private Animator _animator;
+<<<<<<< HEAD
     [SerializeField] private float _jumpSpeed = 5f;
     private Collider2D _collider;
     [SerializeField] private LayerMask _platformsLayerMask;
+=======
+    [SerializeField] private float _jumpSpeed = 1f;
+>>>>>>> 49ab14d53fff012cba154cf98387bddfc029f703
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
        
 
 
+<<<<<<< HEAD
             if (IsGrounded() && Input.GetKeyDown(KeyCode.Space))
             {
                 _playerRigidBody.velocity += new Vector2(0f, _jumpSpeed);
@@ -55,6 +60,13 @@ public class PlayerMovement : MonoBehaviour
             }
         
          
+=======
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            _animator.SetBool("isSpaceBarActive", false);
+
+        }
+>>>>>>> 49ab14d53fff012cba154cf98387bddfc029f703
     }
 
 

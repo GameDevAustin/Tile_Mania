@@ -55149,6 +55149,17 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+=======
+    - target: {fileID: 1135508342936863119, guid: 7a5907dad8ca60c4a86447221b60f061, type: 3}
+      propertyPath: _jumpSpeed
+<<<<<<< HEAD
+      value: 10.25
+=======
+      value: 10
+>>>>>>> 93ae4a37197d46ad5139976bcb27280a0cca3ab5
+      objectReference: {fileID: 0}
+>>>>>>> 49ab14d53fff012cba154cf98387bddfc029f703
     - target: {fileID: 7173382513284471096, guid: 7a5907dad8ca60c4a86447221b60f061, type: 3}
       propertyPath: m_Name
       value: Player_Knight
