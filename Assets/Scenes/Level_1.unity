@@ -40686,7 +40686,7 @@ GameObject:
   - component: {fileID: 369797958}
   - component: {fileID: 369797957}
   m_Layer: 0
-  m_Name: turn_1R
+  m_Name: turn_4R
   m_TagString: turn
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -54691,7 +54691,7 @@ GameObject:
   - component: {fileID: 2071627272}
   - component: {fileID: 2071627271}
   m_Layer: 0
-  m_Name: turn_1L
+  m_Name: turn_4L
   m_TagString: turn
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
