@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HeartSystem : MonoBehaviour
 {
-
+   
     public GameObject[] hearts;
     public int life;
 
@@ -13,6 +13,8 @@ public class HeartSystem : MonoBehaviour
         if (life < 1) 
         {
             Destroy(hearts[0].gameObject);
+            Destroy(this.gameObject);
+            
         } 
         else if (life < 2) 
         {
@@ -28,5 +30,6 @@ public class HeartSystem : MonoBehaviour
     public void TakeDamage (int damage)
     {
         life -= damage;
+
     }
 }
