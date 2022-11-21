@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1230187339}
   - component: {fileID: 1230187341}
   - component: {fileID: 1230187340}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player_Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,9 +99,9 @@ GameObject:
   - component: {fileID: 4902178711591237423}
   - component: {fileID: 699135031356470880}
   - component: {fileID: 1135508342936863119}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Player_Knight
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -278,3 +278,9 @@ MonoBehaviour:
   _platformsLayerMask:
     serializedVersion: 2
     m_Bits: 128
+  _gameOverText: {fileID: 0}
+  hearts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  life: 3

@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
+
+
 public class PlayerMovement : MonoBehaviour
 {
     Vector2 moveInput;
@@ -11,6 +14,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _jumpSpeed = 5f;
     private Collider2D _collider;
     [SerializeField] private LayerMask _platformsLayerMask;
+    public UIManager uIManager;
+
+    [SerializeField] private TMP_Text _gameOverText;
+    public GameObject[] hearts;
+    public int life;
+    public GameObject gameOver;
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
         _playerRigidBody = GetComponent<Rigidbody2D>();
         _collider = transform.GetComponent<Collider2D>();
+        uIManager = GameObject.Find("UIManager").GetComponent<UIManager>();
         
 
     }
@@ -28,6 +38,11 @@ public class PlayerMovement : MonoBehaviour
         OnJump();
         Run();
         FlipSprite();
+        PlayerLives();
+        
+           
+
+
     }
 
     private void OnMove(InputValue value)
@@ -83,5 +98,38 @@ public class PlayerMovement : MonoBehaviour
         RaycastHit2D raycastHit2d= Physics2D.BoxCast(_collider.bounds.center, _collider.bounds.size, 0f, Vector2.down, .1f, _platformsLayerMask);
         Debug.Log(raycastHit2d.collider);
         return raycastHit2d != false;
+    }
+
+    public void Damage(int damage)
+    {
+        life -= damage;
+
+
+    }
+    public void PlayerLives()
+    {
+       
+
+        if (life < 1)
+        {
+            Destroy(hearts[0].gameObject);
+            if (this.gameObject != null)
+            {
+                Destroy(this.gameObject);
+            }
+            gameOver.gameObject.SetActive(true);
+
+
+        }
+        else if (life < 2)
+        {
+            Destroy(hearts[1].gameObject);
+        }
+        else if (life < 3)
+        {
+            Destroy(hearts[2].gameObject);
+        }
+
+        
     }
 }

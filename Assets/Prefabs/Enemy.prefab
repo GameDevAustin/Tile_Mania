@@ -183,4 +183,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  heartSystem: {fileID: 0}
+  player: {fileID: 0}
