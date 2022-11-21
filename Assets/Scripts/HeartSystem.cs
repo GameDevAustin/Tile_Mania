@@ -8,14 +8,7 @@ public class HeartSystem : MonoBehaviour
     public GameObject[] hearts;
     public int life;
 
-    // Start is called before the first frame update
-    // void Start()
-    // {
-        
-    // }
-
-    // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if (life < 1) 
         {
