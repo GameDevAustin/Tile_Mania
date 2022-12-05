@@ -3,8 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - turn
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -12,9 +11,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Jump Collider
+  - platforms
+  - Player
   - 
   - 
   - 
@@ -41,19 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Background
-    uniqueID: 3910328109
-    locked: 0
-  - name: Water
-    uniqueID: 2641993415
-    locked: 0
-  - name: Platforms
-    uniqueID: 3905268703
-    locked: 0
-  - name: Player
-    uniqueID: 2686432767
-    locked: 0
-  - name: Foreground
-    uniqueID: 3196569223
     locked: 0
